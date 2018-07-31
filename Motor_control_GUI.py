@@ -34,11 +34,11 @@ def convert (value,flag):
     
     global offset_steps, offset_mm, steps_per_mm
 
-    if flag == True:                #make convertion from mm to microsteps
+    if flag == True:                #make conversion from mm to microsteps
 
         result = int (offset_steps + (offset_mm-value)*steps_per_mm)
     
-    else:                           #make convertion from microsteps to mm
+    else:                           #make conversion from microsteps to mm
         
         result = offset_mm - (value-offset_steps)/steps_per_mm
     
